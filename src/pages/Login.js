@@ -3,7 +3,9 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../firebase";
 import { updateDoc, doc } from "firebase/firestore";
 import { useHistory } from "react-router-dom";
+import aclogo from '../ac-logo.png';
 
+console.log(aclogo); 
 const Login = () => {
   const [data, setData] = useState({
     email: "",
@@ -45,7 +47,8 @@ const Login = () => {
   };
   return (
     <section>
-      <h3>Log into your Account</h3>
+      <img src={aclogo} alt="Logo" className="aclogin"/>
+      <h3>Log with your CCSE Account</h3>
       <form className="form" onSubmit={handleSubmit}>
         <div className="input_container">
           <label htmlFor="email">Email</label>
@@ -67,7 +70,7 @@ const Login = () => {
         </div>
         {error ? <p className="error">{error}</p> : null}
         <div className="btn_container">
-          <button className="btn" disabled={loading}>
+          <button className="btnlogin" disabled={loading}>
             {loading ? "Logging in ..." : "Login"}
           </button>
         </div>

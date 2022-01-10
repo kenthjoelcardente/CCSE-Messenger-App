@@ -5,6 +5,7 @@ import { signOut } from "firebase/auth";
 import { updateDoc, doc } from "firebase/firestore";
 import { AuthContext } from "../context/auth";
 import { useHistory } from "react-router-dom";
+import aclogo from '../CCSEbanner.jpg';
 
 const Navbar = () => {
   const history = useHistory();
@@ -20,17 +21,22 @@ const Navbar = () => {
   return (
     <nav>
       <h3>
-        <Link to="/">Messenger</Link>
+        <Link to="/">CCSE Messenger</Link>
       </h3>
+      <img src={aclogo} alt="Logo" className="aclogo"/>
+    
+      
+      
       <div>
         {user ? (
           <>
             <Link to="/profile">Profile</Link>
-            <button className="btn" onClick={handleSignout}>
+            <button className="btnlogin" onClick={handleSignout}>
               Logout
             </button>
           </>
-        ) : (
+        ) :
+         (
           <>
             <Link to="/register">Register</Link>
             <Link to="/login">Login</Link>

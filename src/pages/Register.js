@@ -55,6 +55,7 @@ const Register = () => {
   return (
     <section>
       <h3>Create An Account</h3>
+      <h5>Use your Asian College Email</h5>
       <form className="form" onSubmit={handleSubmit}>
         <div className="input_container">
           <label htmlFor="name">Name</label>
@@ -80,7 +81,7 @@ const Register = () => {
         </div>
         {error ? <p className="error">{error}</p> : null}
         <div className="btn_container">
-          <button className="btn" disabled={loading}>
+          <button className="btnlogin" disabled={loading}>
             {loading ? "Creating ..." : "Register"}
           </button>
         </div>

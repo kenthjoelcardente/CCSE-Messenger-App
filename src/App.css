@@ -3,15 +3,23 @@
 }
 
 :root {
-  --color-1: #242526;
-  --color-2: white;
+  --color-1: #ffffff;
+  --color-2: rgb(102,0,100);
   --color-3: #0084ff;
-  --color-4: grey;
-  --color-5: #eb4034;
-  --color-6: #333;
+  --color-4: #e79ee7;
+  --color-5: #f86459;
+  --color-6: rgb(255, 255, 255);
+  --color-7: #7A247B;
+  --color-8: #1C1C1C;
+  
 }
 
 /* Navbar */
+.aclogo {
+  width: 300px;
+  height: auto;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -36,11 +44,24 @@ section {
   box-shadow: 1px 2px 10px var(--color-4);
   padding: 10px 20px;
   border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.aclogin{
+  width: 150px;
+  height: auto;
+  text-align: center;
 }
 section h3 {
   text-align: center;
   font-size: 20px;
-  color: var(--color-4);
+  color: var(--color-7);
+}
+
+section h5 {
+  text-align: center;
+  font-size: 20px;
+  color: var(--color-8);
 }
 /* Register */
 section .form {
@@ -49,13 +70,14 @@ section .form {
 }
 .input_container {
   margin-top: 20px;
+  color:#222021;
 }
 .input_container input {
   width: 100%;
   padding: 10px;
   outline: none;
   margin-top: 10px;
-  border: 1px solid var(--color-6);
+  border: 1px solid var(--color-7);
   border-radius: 5px;
 }
 .btn_container {
@@ -67,8 +89,20 @@ section .form {
   border-radius: 5px;
   outline: none;
   border: 1px solid var(--color-4);
-  background: var(--color-1);
+  background: var(--color-7);
   color: var(--color-2);
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+  font-size: 16px;
+}
+
+.btnlogin {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--color-4);
+  background: var(--color-7);
+  color: var(--color-1);
   cursor: pointer;
   transition: 0.3s ease-in-out all;
   font-size: 16px;
@@ -113,6 +147,7 @@ section .form {
   text-align: center;
 }
 .text_container {
+  color: #222021;
   flex-grow: 1;
 }
 .text_container h3 {
@@ -173,7 +208,7 @@ section .form {
 .messages_user {
   padding: 10px;
   text-align: center;
-  border-bottom: 2px solid var(--color-6);
+  border-bottom: 2px solid var(--color-7);
 }
 .no_conv {
   font-size: 20px;
@@ -203,11 +238,11 @@ section .form {
 .messages {
   height: calc(100vh - 200px);
   overflow-y: auto;
-  border-bottom: 1px solid var(--color-6);
+  border-bottom: 2px solid var(--color-7);
 }
 .message_wrapper {
   margin-top: 5px;
-  padding: 0px 5px;
+  padding: 20px 10px 0 20px;  
 }
 .message_wrapper img {
   width: 100%;
@@ -227,16 +262,17 @@ section .form {
 }
 .message_wrapper.own {
   text-align: right;
+  
 }
 .me {
   background: var(--color-3);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .friend {
-  background: var(--color-6);
+  background: var(--color-7);
 }
 .selected_user {
-  background: var(--color-6);
+  background: var(--color-7);
 }
 .truncate {
   font-size: 14px;
