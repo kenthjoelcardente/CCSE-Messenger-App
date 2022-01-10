@@ -5,7 +5,7 @@
 :root {
   --color-1: #ffffff;
   --color-2: rgb(102,0,100);
-  --color-3: #0084ff;
+  --color-3: #9900ff;
   --color-4: #e79ee7;
   --color-5: #f86459;
   --color-6: rgb(255, 255, 255);
@@ -204,11 +204,16 @@ section .form {
 .messages_container {
   position: relative;
   width: 100%;
+  background-color: #3f0335af;
+  
 }
 .messages_user {
   padding: 10px;
   text-align: center;
   border-bottom: 2px solid var(--color-7);
+  background-color: #3f0335af;
+  box-shadow: 5px 10px rgba(139, 8, 141, 0.671);
+  
 }
 .no_conv {
   font-size: 20px;
@@ -239,6 +244,8 @@ section .form {
   height: calc(100vh - 200px);
   overflow-y: auto;
   border-bottom: 2px solid var(--color-7);
+  
+  
 }
 .message_wrapper {
   margin-top: 5px;
@@ -267,12 +274,16 @@ section .form {
 .me {
   background: var(--color-3);
   color: rgb(255, 255, 255);
+  box-shadow: 5px 10px #28012969;
 }
 .friend {
   background: var(--color-7);
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.582);
 }
 .selected_user {
   background: var(--color-7);
+  box-shadow: 5px 10px rgba(139, 8, 141, 0.671);
+  border-radius: 10%;
 }
 .truncate {
   font-size: 14px;
@@ -290,6 +301,7 @@ section .form {
   color: white;
   padding: 2px 4px;
   border-radius: 10px;
+  
 }
 .sm_screen {
   display: none;
