@@ -225,6 +225,7 @@ section .form {
 .no_conv {
   font-size: 20px;
   color: var(--color-4);
+  padding-top: 100px;
   text-align: center;
 }
 .message_form {
@@ -338,7 +339,12 @@ section .form {
   .aclogo {
     display: none;
   }
-
+  .no_conv {
+    font-size: 17px;
+    color: var(--color-4);
+    padding-top: 100px;
+    text-align: center;
+  }
   .user_wrapper {
     display: none;
   }
