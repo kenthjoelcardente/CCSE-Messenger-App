@@ -55,14 +55,14 @@ const Register = () => {
   return (
     <section>
       <h3>Create An Account</h3>
-      <h5>Use your Asian College Email</h5>
+      
       <form className="form" onSubmit={handleSubmit}>
         <div className="input_container">
           <label htmlFor="name">Name</label>
           <input type="text" name="name" value={name} onChange={handleChange} />
         </div>
         <div className="input_container">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Email <label className="useACemail">Use your Asian College Email*</label></label>
           <input
             type="text"
             name="email"
