@@ -62,13 +62,14 @@ const Register = () => {
           <input type="text" name="name" value={name} onChange={handleChange} />
         </div>
         <div className="input_container">
-          <label htmlFor="email">Email <label className="useACemail">Use your Asian College Email*</label></label>
+          <label htmlFor="email">Email</label>
           <input
             type="text"
             name="email"
             value={email}
             onChange={handleChange}
           />
+          <label className="useACemail">Use your Asian College Email*</label>
         </div>
         <div className="input_container">
           <label htmlFor="password">Password</label>
