@@ -342,7 +342,7 @@ section .form {
   .no_conv {
     font-size: 17px;
     color: var(--color-4);
-    padding-top: 100px;
+    padding-top: 85px;
     text-align: center;
   }
   .user_wrapper {
